@@ -37,7 +37,7 @@ public class RunnableDemo02 {
 //		new Thread(myRunnable1).run() ;	// 调用线程主体
 		
 //		new Thread(myRunnable2).run() ;	// 调用线程主体
-//		new Thread(myRunnable3).run() ;	// 调用线程主体
+//		new Thread(myRunnable3).run() ;	// 调用线程主体 
 		thread1.start();
 		thread2.start();
 		thread3.start();

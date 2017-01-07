@@ -14,6 +14,13 @@ public class Test01 {
 	 *@author zyy
 	 *类说明
 	 */
+	//JDBC数据库连接步骤
+	//首先要加载JDBC驱动程序，识别加载的驱动程序，然后进行数据库的操作，并将结果放置到结果集中，对结果集进行遍历，最后要关闭数据库的连接
+	//1、使用Class.forName()方法来加载程序中的JDBC驱动程序
+	//2、在程序加载完成JDBC驱动之后，DriverManager就会去识别所加载的驱动程序，并调用getConnection（）方法来连接数据库
+	//3、使用getConnection（）方法获取Connection对象之后，就可以创建一个Statement对象对数据库进行操作
+	//4、返回一个结果集，通过执行Statement对象的executeQuery（）方法来返回Resultset结果集对象，最后对结果集进行遍历
+	//5、关闭数据库的连接
 	public static void main(String[] args){
 		String driver ="oracle.jdbc.driver.OracleDriver";
 		String url="jdbc:Oracle:thin:@10.163.91.91:1521:pomsdg2";
